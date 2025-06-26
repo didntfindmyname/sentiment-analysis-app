@@ -1,0 +1,8 @@
+fastapi
+gradio
+transformers
+torch
+nltk
+scipy
+pydantic
+uvicorn
