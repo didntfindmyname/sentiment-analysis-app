@@ -15,7 +15,7 @@ This project is an interactive sentiment analysis web app using VADER, RoBERTa, 
 ## 💻 Run Locally
 
 ```bash
-git clone https://github.com/your-username/sentiment-analysis-app.git
+git clone https://github.com/didntfindmyname/sentiment-analysis-app.git
 cd sentiment-analysis-app
 pip install -r requirements.txt
 python app.py
