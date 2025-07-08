@@ -26,8 +26,6 @@ roberta_model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
 # Load Dataset from CSV
 
 reviews_df = pd.read_csv("Reviews.csv").dropna(subset=["Text", "Score"])
-reviews_df = reviews_df[reviews_df["Score"].isin([1, 2, 4, 5])].sample(2000, random_state=42)
-
 # Binary sentiment: 1,2 = negative (0), 4,5 = positive (1)
 
 reviews_df["label"] = reviews_df["Score"].apply(lambda x: 0 if x in [1, 2] else 1)
